@@ -1,0 +1,115 @@
+{
+  "template": "Estimado equipo de {nombre}:\n\nSomos *PEJ – Punto de Encuentro Juvenil* y estamos organizando una jornada solidaria para colaborar con la remodelación de la *sala cuna Pico Picotero*, en La Calera.\n\nEste espacio acompaña a madres adolescentes y brinda sus servicios de manera gratuita. Actualmente, cuenta con recursos limitados para mantener sus instalaciones en óptimas condiciones, por lo que buscamos ayudar a renovar el lugar y ofrecer un ambiente más cuidado y acogedor.\n\nNos comunicamos con ustedes para consultar si podrían acompañarnos con la donación de alguno de los siguientes materiales:\n\n• 1 balde de pintura blanca de 20 litros.\n• 1 tarro de pintura azul de 4 litros.\n• 1 tarro de pintura naranja de 4 litros.\n• 1 tarro de pintura amarilla de 4 litros.\n• 10 rodillos y 10 brochas para pintar.\n• 2 envases de enduido.\n• 2 botellas de aguarrás.\n• 6 bandejas para pintura.\n\n*Cualquier aporte, aunque sea de una parte de los materiales, será de gran ayuda.* Entendemos que la colaboración dependerá de sus posibilidades y agradeceremos mucho lo que puedan brindarnos.\n\nPueden conocer más sobre nosotros en https://pej.lat. Quedamos a disposición para ampliar la información sobre la iniciativa y coordinar el retiro de los materiales que puedan donar.\n\nMuchas gracias por su tiempo y por considerar acompañarnos en este proyecto. Esperamos contar con su respuesta.\n\nSaludos cordiales,\n\nEquipo de PEJ\nPunto de Encuentro Juvenil",
+  "contacts": [
+    {
+      "id": "c01",
+      "nombre": "Paclin Pinturas",
+      "telefono": "5493514651187"
+    },
+    {
+      "id": "c02",
+      "nombre": "Pinturas Paclin",
+      "telefono": "5493515594033"
+    },
+    {
+      "id": "c03",
+      "nombre": "Cavazzon",
+      "telefono": "5493514685691"
+    },
+    {
+      "id": "c04",
+      "nombre": "Pinturas Paclin (Sabattini)",
+      "telefono": "5493515593972"
+    },
+    {
+      "id": "c05",
+      "nombre": "Garin pinturería",
+      "telefono": "5493513495675"
+    },
+    {
+      "id": "c06",
+      "nombre": "Prestigio",
+      "telefono": "5493517024179"
+    },
+    {
+      "id": "c07",
+      "nombre": "Punto Color",
+      "telefono": "5493517293748"
+    },
+    {
+      "id": "c08",
+      "nombre": "Pintureria Fragueiro",
+      "telefono": "5493514723172"
+    },
+    {
+      "id": "c09",
+      "nombre": "Pintureria Deccopint",
+      "telefono": "5493517048886"
+    },
+    {
+      "id": "c10",
+      "nombre": "Pintecord",
+      "telefono": "5493512195711"
+    },
+    {
+      "id": "c11",
+      "nombre": "Rosell Pintureria – Fadepa",
+      "telefono": "5493512068772"
+    },
+    {
+      "id": "c12",
+      "nombre": "Pintureria Garin (Sucursal Transito Caceres)",
+      "telefono": "5493516634777"
+    },
+    {
+      "id": "c13",
+      "nombre": "Garin Ambrosio Olmos",
+      "telefono": "5493512259812"
+    },
+    {
+      "id": "c14",
+      "nombre": "Pinturerias Tortorella",
+      "telefono": "5493517541892"
+    },
+    {
+      "id": "c15",
+      "nombre": "Pintureria Color Home",
+      "telefono": "5493513924976"
+    },
+    {
+      "id": "c16",
+      "nombre": "Pintureria Plenomax",
+      "telefono": "5493515525051"
+    },
+    {
+      "id": "c17",
+      "nombre": "Pintureria Szumik",
+      "telefono": "5493515487039"
+    },
+    {
+      "id": "c18",
+      "nombre": "Pintureria Alta Gama",
+      "telefono": "5493517334066"
+    },
+    {
+      "id": "c19",
+      "nombre": "Pintureria Alberdi",
+      "telefono": "5493515212804"
+    },
+    {
+      "id": "c20",
+      "nombre": "Tu Color pinturerías",
+      "telefono": "5493516518414"
+    },
+    {
+      "id": "c21",
+      "nombre": "Delivery Paint – Pinturas San Agustin (Sux. Santa ana)",
+      "telefono": "5493518762065"
+    },
+    {
+      "id": "c22",
+      "nombre": "Colores Cordoba Pintureria FADEPA",
+      "telefono": "5493515307647"
+    }
+  ]
+}

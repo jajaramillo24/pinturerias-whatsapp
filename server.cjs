@@ -84,7 +84,7 @@ const server=http.createServer(async(req,res)=>{
       return json(res,404,{error:'Ruta no encontrada.'});
     }
     if(req.method==='GET'){
-      const assets={'/':['index.html','text/html; charset=utf-8'],'/app.js':['app.js','text/javascript; charset=utf-8'],'/style.css':['style.css','text/css; charset=utf-8'],'/theme.css':['theme.css','text/css; charset=utf-8']};
+      const assets={'/':['local.html','text/html; charset=utf-8'],'/app.js':['app.js','text/javascript; charset=utf-8'],'/style.css':['style.css','text/css; charset=utf-8'],'/theme.css':['theme.css','text/css; charset=utf-8']};
       const entry=assets[url.pathname];
       if(entry){res.writeHead(200,{'Content-Type':entry[1]});return res.end(fs.readFileSync(path.join(__dirname,'docs',entry[0])));}
     }

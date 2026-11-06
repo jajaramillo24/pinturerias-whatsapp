@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.cjs",
     "demo": "node server.cjs --demo",
+    "build:pages": "node scripts/build-public-data.cjs",
     "test": "node --test test/*.test.cjs"
   },
   "engines": {"node": ">=22"},

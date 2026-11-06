@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10281f">
+  <meta name="description" content="Panel de PEJ para revisar y enviar pedidos solidarios a pinturerías por WhatsApp.">
+  <title>PEJ · Contacto con pinturerías</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./theme.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-mark"></span> PEJ · PUNTO DE ENCUENTRO JUVENIL</div><h1>Una causa.<br><span>22 conversaciones.</span></h1><p>Prepará el pedido solidario para la sala cuna Pico Picotero, revisá cada pinturería y enviá la tanda desde tu WhatsApp.</p><div class="hero-facts"><span>La Calera, Córdoba</span><span>22 contactos</span><span>Envíos con revisión</span></div></div>
+    <div class="hero-art" aria-hidden="true"><div class="paint-can"><span>PEJ</span><i></i></div><div class="paint-stroke"></div><div class="hero-art-caption">Pintar también<br>es cuidar.</div></div>
+  </header>
+
+  <section class="setup-strip" aria-label="Preparación del programa local"><div><strong>Antes de empezar</strong><p>El envío automático necesita que el programa local esté abierto en tu computadora. La página publicada se conecta a él; la sesión de WhatsApp y el historial se guardan solo allí.</p></div><div class="setup-actions"><a class="setup-link" href="https://github.com/jajaramillo24/pinturerias-whatsapp/archive/refs/heads/main.zip">Descargar programa ↗</a><a class="setup-link secondary-link" href="http://127.0.0.1:3487">Abrir panel local ↗</a></div></section>
+
+  <div id="notice" role="alert" hidden></div>
+  <div class="workspace">
+    <div class="editor">
+      <section class="panel"><div class="section-title"><span class="step">1</span><h2>Revisá el mensaje</h2></div><p class="hint">El texto que compartiste ya está cargado. <code>{nombre}</code> se reemplaza por el nombre de cada pinturería. Podés editarlo antes de generar la vista previa.</p><form id="form"><label for="template">Mensaje para WhatsApp</label><textarea id="template" rows="18" aria-label="Mensaje para WhatsApp" maxlength="6000" spellcheck="true"></textarea><div class="form-actions"><button type="button" id="restore" class="text-button">Restaurar texto original</button><button class="primary" type="submit">Generar 22 vistas previas <span>→</span></button></div></form></section>
+      <section class="panel"><div class="section-title"><span class="step">2</span><h2>Elegí los contactos</h2><span id="count" class="pill">22</span></div><p class="hint">Los números se interpretaron como celulares argentinos con prefijo <strong>+54 9</strong>. Revisalos antes de enviar. Para corregirlos, editá <code>contactos.json</code> y reiniciá el programa.</p><label class="select-all"><input id="select-all" type="checkbox" checked> Seleccionar todos</label><div id="contacts"></div></section>
+    </div>
+    <aside>
+      <section class="panel connection"><div class="section-title"><span class="step">3</span><h2>Vinculá WhatsApp</h2></div><div id="connection-status" class="status">Buscando programa local…</div><p id="connection-help" class="hint"></p><img id="qr" alt="QR para vincular WhatsApp" hidden width="280" height="280"><button type="button" id="connect" class="secondary full">Mostrar QR</button><p class="fine">En el teléfono: WhatsApp → Dispositivos vinculados → Vincular un dispositivo. Escaneá el QR que aparecerá aquí.</p></section>
+      <section class="panel send-panel"><div class="section-title"><span class="step">4</span><h2>Revisá y enviá</h2></div><p id="preview-info" class="hint">Generá las vistas previas para comprobar el texto de cada destinatario.</p><select id="preview-select" aria-label="Destinatario de la vista previa" hidden></select><article id="message" class="message" hidden></article><div id="preview-actions" class="actions" hidden><button type="button" id="copy" class="text-button">Copiar mensaje</button><a id="open-chat" target="_blank" rel="noopener noreferrer">Abrir chat ↗</a></div><label class="review"><input id="confirmed" type="checkbox" disabled><span>Revisé el mensaje y los teléfonos. Quiero enviar el pedido a los contactos seleccionados.</span></label><button type="button" id="send" class="primary full" disabled>Enviar tanda</button><button type="button" id="stop" class="danger full" hidden>Detener próximos envíos</button><p class="fine">Se envía un mensaje cada 5 segundos. El botón de detener cancela los pendientes; el mensaje que ya está en proceso puede salir. Los envíos con resultado incierto requieren revisar el chat antes de reintentar.</p><p class="fine">Esta integración local automatiza WhatsApp Web y no es oficial. WhatsApp puede restringir cuentas que usen automatizaciones.</p></section>
+    </aside>
+  </div>
+  <section class="panel history-panel"><div class="section-title"><h2>Seguimiento de la tanda</h2><button type="button" class="text-button" id="export">Descargar historial CSV</button></div><p id="campaign-summary" class="hint">Todavía no se inició ninguna tanda.</p><div class="table-wrap"><table><thead><tr><th>Contacto</th><th>Teléfono</th><th>Estado</th><th>Detalle</th></tr></thead><tbody id="results"></tbody></table></div><details><summary>Historial y envíos a revisar</summary><p class="hint">“Enviado” indica que WhatsApp Web aceptó el mensaje; no confirma entrega ni lectura. Si un envío quedó incierto, abrí el chat antes de habilitar un reintento.</p><div id="history"></div></details></section>
+  <footer><strong>PEJ</strong> · Punto de Encuentro Juvenil <span>La sesión y el historial quedan en tu computadora.</span></footer>
+</main>
+</body>
+</html>
